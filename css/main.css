@@ -357,6 +357,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: wrap column;
@@ -364,8 +370,48 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 500px;
+  height: 530px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+  overflow: hidden;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.img-container img {
+  width: 500px;
+  height: 500px;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buttons-container button {
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  padding: 0.5rem;
+  width: 49%;
+}
+
+.buttons-container button:nth-child(2) {
+  background-color: blue;
 }
 /*# sourceMappingURL=main.css.map */
